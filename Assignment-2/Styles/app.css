@@ -1,0 +1,376 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* :default setup */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* default setup ending*/
+
+* {
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+		'Helvetica Neue', sans-serif;
+}
+
+body {
+	background: #f5f6fa;
+	font-family: 'Oswald', sans-serif;
+}
+
+div.sidebar {
+	padding: 0px !important;
+}
+
+.wrapper .sidebar {
+	background: #192226;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 225px;
+	height: 100%;
+	padding: 20px 0;
+	transition: all 0.5s ease;
+}
+.wrapper .right_side {
+	background: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin-left: 225px;
+	margin-top: 50px;
+
+	height: 100vh;
+	padding: 20px 0;
+	transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.wrapper .sidebar .profile img {
+	display: block;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h6 {
+	color: #ffffff;
+	margin: 10px 0 10px;
+	padding: 10px 10px;
+}
+
+.wrapper .sidebar .profile p {
+	color: rgb(206, 240, 253);
+	font-size: 14px;
+}
+.wrapper .sidebar ul li a {
+	display: block;
+	padding: 13px 30px;
+	color: rgb(241, 237, 237);
+	font-size: 16px;
+	position: relative;
+	background-color: #273236;
+}
+
+.wrapper .sidebar ul li a .icon {
+	color: #dee4ec;
+	width: 30px;
+	display: inline-block;
+}
+
+/* hover setup */
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+	color: #0c7db1;
+
+	background: white;
+	border-right: 2px solid rgb(5, 68, 104);
+}
+
+/* .wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon {
+	color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before {
+	display: block;
+} */
+
+.wrapper .section {
+	width: calc(100% - 225px);
+	margin-left: 225px;
+	transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar {
+	background: rgb(7, 105, 185);
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+}
+
+.wrapper .section .top_navbar .hamburger a {
+	font-size: 28px;
+	color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover {
+	color: #a2ecff;
+}
+body.active .wrapper .sidebar {
+	left: -225px;
+}
+
+body.active .wrapper .section {
+	margin-left: 0;
+	width: 100%;
+}
+
+div .admin {
+	text-align: center;
+	display: block;
+	background: #3277a7;
+	padding: 16px;
+	margin-bottom: 5px;
+}
+
+div.profile span {
+	font-size: 15px;
+}
+.fa-circle {
+	color: green;
+}
+
+#imp {
+	color: red;
+}
+#war {
+	color: yellow;
+}
+#info {
+	color: blue;
+}
+.search {
+	width: 100%;
+	position: relative;
+	display: flex;
+}
+
+.searchTerm {
+	width: 100%;
+	/* border: 3px solid #00B4CC; */
+	border-right: none;
+	padding: 5px;
+	height: 30px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+	color: #9dbfaf;
+	border: solid white;
+}
+
+.searchButton {
+	width: 20px;
+	height: 30px;
+	border: solid white;
+	border-left: none;
+	text-align: center;
+	color: black;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+div.right_side {
+	margin: 100px;
+	flex-direction: row;
+	text-align: center;
+	color: red;
+}
+
+section.main_container p {
+	color: red;
+	margin-left: 0px;
+}
+.main-sub {
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	width: 263px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	height: 70px;
+}
+.main-sub-1-a {
+	background-color: #3385ff;
+	width: 30%;
+	text-align: center;
+	padding-top: 20px;
+	font-size: xx-large;
+}
+.main-sub-1-b {
+	background-color: red;
+	width: 30%;
+	text-align: center;
+	padding-top: 20px;
+
+	font-size: xx-large;
+}
+.main-sub-1-c {
+	background-color: green;
+	width: 30%;
+	text-align: center;
+	padding-top: 20px;
+	font-size: xx-large;
+}
+.main-sub-1-d {
+	background-color: orange;
+	width: 30%;
+	text-align: center;
+	padding-top: 20px;
+	font-size: xx-large;
+}
+.main-sub-2 {
+	background-color: white;
+	width: 100%;
+	color: black;
+	padding-left: 10px;
+	padding-top: 6PX;
+}
